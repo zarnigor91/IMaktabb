@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_78"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:elevation="@dimen/dp_10"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_78"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_back_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#005FFF"
+                android:paddingStart="@dimen/dp_"
+                android:src="@drawable/ic_back_blue"
+                android:layout_marginStart="@dimen/dp_21"
+                android:layout_marginTop="@dimen/dp_22"
+                android:padding="@dimen/dp_8"
+                android:drawablePadding="@dimen/dp_10"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_about_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/about_app"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:paddingTop="@dimen/dp_8"
+                android:fontFamily="@font/avenir_roman"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_22"
+                android:textSize="@dimen/sp_16"
+                android:layout_toRightOf="@id/tv_back_about"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_main_logo"
+        android:layout_marginTop="@dimen/dp_35"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_about_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir_roman"
+        android:layout_marginTop="@dimen/dp_18"
+        android:hint="version 1.1.0"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="#F1F2F5"
+        android:layout_marginTop="@dimen/dp_20"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_about_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:fontFamily="@font/avenir_roman"
+        android:text="Proident commodo pariatur duis anim exercitation id. Pariatur laboris officia sint mollit fugiat adipisicing reprehenderit amet eu ipsum laborum reprehenderit laborum exercitation. Cillum cupidatat sit elit adipisicing eu sunt aliquip in magna.
+
+Magna do commodo mollit amet minim nulla duis id non cupidatat proident minim. Exercitation cupidatat pariatur velit excepteur aliqua commodo eu officia ad deserunt. Anim quis et consequat tempor. Consectetur consectetur qui in non magna non adipisicing incididunt excepteur deserunt laboris proident.
+
+Quis ipsum excepteur enim in dolor aute. Lorem culpa eu veniam officia fugiat enim. Amet voluptate nostrud ipsum commodo duis consequat pariatur Lorem exercitation et cupidatat amet. Aliquip nulla ut occaecat laborum officia nulla adipisicing dolore amet fugiat. Non excepteur minim consequat nisi ea nostrud ut in in anim voluptate. Est officia incididunt laborum laborum ut voluptate consectetur. Aliqua anim anim aute consectetur culpa labore pariatur exercitation nulla culpa."
+        />
+</LinearLayout>

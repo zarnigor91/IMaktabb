@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/liner_les"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_dayofweek_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:fontFamily="@font/avenir_roman"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            tools:text="Dushanba" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_day_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:fontFamily="@font/avenir_roman"
+            android:textSize="16sp"
+            tools:text="8" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_month_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_roman"
+            android:paddingStart="@dimen/dp_5"
+            android:textSize="@dimen/sp_16"
+            tools:text="mart" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_rv_full"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="wrap_content">
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:id="@+id/const_id"
+             android:padding="@dimen/dp_1"
+             app:layout_constraintTop_toTopOf="parent"
+             android:background="@drawable/bg_liner_list"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:background="#FBFBFD"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/liner_les_item"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_les_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="left|center"
+                android:paddingStart="@dimen/dp_5"
+                android:fontFamily="@font/avenir_roman"
+                android:layout_weight="0.4"
+                android:textSize="@dimen/sp_13" />
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/colorBorder"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_les_subject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:text="@string/lesson"
+                android:gravity="left|center"
+                android:paddingStart="@dimen/dp_5"
+                android:fontFamily="@font/avenir_roman"
+                android:textSize="@dimen/sp_13" />
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/colorBorder"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_les_check"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="@string/home_work"
+                android:paddingStart="@dimen/dp_5"
+                android:fontFamily="@font/avenir_roman"
+                android:textSize="@dimen/sp_13"
+                />
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/colorBorder"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_les_mark"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_weight="0.8"
+                android:gravity="left|center"
+                android:paddingStart="@dimen/dp_5"
+                android:fontFamily="@font/avenir_roman"
+                android:text="@string/rating"
+                android:textAlignment="center"
+                android:textSize="@dimen/sp_13" />
+
+        </LinearLayout>
+         </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            app:layout_constraintTop_toBottomOf="@+id/const_id"
+            android:background="@color/colorBorder"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_not_found_lesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/view_top"
+            android:text="@string/today_not"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_mark_week_parent"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/item_week_mark"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rv_list"
+            app:layout_constraintTop_toBottomOf="@+id/view_top"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

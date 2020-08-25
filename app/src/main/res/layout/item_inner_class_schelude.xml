@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/liner_week_day"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorBorder"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/colorBorder"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:layout_weight="0.4"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:textSize="@dimen/sp_13" />
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/colorBorder"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp_6"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_subject"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Informatika"
+            android:gravity="left|center"
+            android:fontFamily="@font/avenir_roman"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_13" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Informatika"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="left|center"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/colorBorder"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2.1"
+        android:weightSum="2"
+        android:padding="@dimen/dp_8"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_room"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:fontFamily="@font/avenir_roman"
+            android:text="A212"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_13" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:fontFamily="@font/avenir_roman"
+                android:text="A212"
+                android:textSize="@dimen/sp_10" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:fontFamily="@font/avenir_roman"
+                android:text="-"
+                android:textSize="@dimen/sp_10" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_time_end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/avenir_roman"
+                android:gravity="left|center"
+                android:text="A212"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+    </LinearLayout>
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/colorBorder"/>
+        </LinearLayout>
+</LinearLayout>

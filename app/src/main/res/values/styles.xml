@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#3966FB</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#3966FB</item>
+
+        <item name="android:statusBarColor">@android:color/white</item>
+    </style>
+    <style name="boldText">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="BottomNavigation" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlHighlight">#000000</item>
+        <item name="colorPrimary">#3966FB</item>
+        <item name="colorControlNormal">#3966FB</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dp_15</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:shadowColor">#3966FB</item>
+        <item name="android:layoutDirection">rtl</item>
+    </style>
+
+    <style name="SmsVerEditTextStyle">
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:layout_margin">@dimen/dp_8</item>
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/background_number</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">@dimen/dp_10</item>
+        <item name="android:paddingEnd">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_24</item>
+        <item name="android:paddingBottom">@dimen/dp_24</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStyle">a</style>
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+
+</resources>

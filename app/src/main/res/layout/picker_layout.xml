@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_50"
+        android:fontFamily="@font/avenir_roman"
+        android:text="Date Picker"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvsingleOptions"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@+id/tvTime"
+        android:layout_margin="@dimen/dp_50"
+        android:fontFamily="@font/avenir_roman"
+        android:text="Single Options Picker" />
+
+
+
+    <View
+        android:id="@+id/vMasker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e0000000"
+        android:visibility="gone" />
+</LinearLayout>

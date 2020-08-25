@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard.DashboardActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_78"
+        android:elevation="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_78"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_pupil_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/background_grey"
+                android:drawableEnd="@drawable/ic_click"
+                android:drawablePadding="@dimen/dp_10"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_20"
+                android:fontFamily="@font/avenir_roman"
+                android:textColor="#005FFF"
+                tools:text="Ergashev D"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_22"
+                android:layout_toRightOf="@id/tv_pupil_dashboard"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="@dimen/dp_8"
+                tools:text="01-2015 Sinf" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/im_user_dash"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_22"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:src="@drawable/ic_peoplee" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120"
+                android:layout_marginTop="@dimen/dp_25"
+                android:background="@drawable/background_people"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_120"
+                    android:paddingTop="@dimen/dp_16"
+                    android:paddingBottom="-20dp"
+                    android:src="@drawable/ic_people"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_passes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenir_roman"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_24" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/did_not_come"
+                            android:fontFamily="@font/avenir_roman"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dp_2"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_complaints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenir_roman"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_24" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/Complaint"
+                            android:fontFamily="@font/avenir_roman"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dp_2"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_praises"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenir_roman"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_24" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/Praise"
+                            android:fontFamily="@font/avenir_roman"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dp_2"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_behavior"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/avenir_roman"
+                            android:textSize="@dimen/sp_24" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/behavior"
+                            android:fontFamily="@font/avenir_roman"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/background_imag">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_80"
+                        android:paddingTop="@dimen/dp_16"
+                        android:paddingBottom="-20dp"
+                        android:src="@drawable/ic_images"
+                        android:fontFamily="@font/avenir_roman"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_images"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/dp_20"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvtotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenir_roman"
+                            android:text="15"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_24" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            style="@style/TextStyle"
+                            android:paddingStart="@dimen/dp_15"
+                            android:fontFamily="@font/avenir_book"
+                            android:text="@string/gpa_students"
+                            android:paddingBottom="@dimen/dp_6"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/background_book">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_90"
+                        android:layout_height="@dimen/dp_80"
+                        android:paddingTop="@dimen/dp_16"
+                        android:paddingBottom="-20dp"
+                        android:src="@drawable/ic_book"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/dp_20"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenir_roman"
+                            android:text="15"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_24" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/avenir_roman"
+                            android:gravity="center"
+                            android:text="@string/mastering"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_roman"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_roman"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today"
+                    android:fontFamily="@font/avenir_roman"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_22" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_day_scushel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dp_5"
+                    android:fontFamily="@font/avenir_roman"
+                    android:text="18"
+                    android:textSize="@dimen/sp_22" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_roman"
+                    android:paddingStart="@dimen/dp_5"
+                    android:text="-"
+                    android:textSize="@dimen/sp_22" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_month_scushel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_roman"
+                    android:paddingStart="@dimen/dp_5"
+                    android:text="fevral"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:fontFamily="@font/avenir_roman"
+                android:text="@string/lesson_attendance"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_rv_full"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_liner_list"
+                    android:weightSum="4">
+
+                         <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_weight="0.4"
+                            android:id="@+id/tv_number"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:fontFamily="@font/avenir_roman"
+                            android:text="1"
+                            android:textSize="@dimen/sp_13" />
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBorder"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:padding="@dimen/dp_8"
+                            android:layout_weight="1.6"
+                            android:id="@+id/tv_subject"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:fontFamily="@font/avenir_roman"
+                            android:text="@string/lesson"
+                            android:textSize="@dimen/sp_13"
+                            android:textStyle="bold" />
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBorder"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:padding="@dimen/dp_8"
+                            android:id="@+id/tv_room"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:fontFamily="@font/avenir_roman"
+                            android:gravity="left|center"
+                            android:text="@string/room"
+                            android:textSize="@dimen/sp_13" />
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBorder"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_status"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/avenir_roman"
+                        android:layout_weight="0.5"
+                        android:drawableStart="@drawable/icon_work"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/sp_18" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_item_not_found"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_16"
+                    android:gravity="center"
+                    android:background="@drawable/bg_rv_list"
+                    android:text="@string/today_not"
+                    android:visibility="gone"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_lesson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="7"
+                    android:padding="@dimen/dp_1"
+                    android:background="@drawable/bg_rv_list"
+                    tools:listitem="@layout/table_list_item"
+                    />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:fontFamily="@font/avenir_roman"
+                android:text="Baholar"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_rv_full"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rv_title"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_1"
+                    android:weightSum="3">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_weight="0.3"
+                        android:text="#"
+                        android:fontFamily="@font/avenir_roman"
+                        android:textSize="@dimen/sp_13" />
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBorder"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv2"
+                        android:layout_width="0dp"
+                        android:padding="@dimen/dp_8"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/avenir_roman"
+                        android:text="Dars"
+                        android:textSize="@dimen/sp_13" />
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBorder"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv3"
+                        android:layout_width="0dp"
+                        android:padding="@dimen/dp_8"
+                        android:fontFamily="@font/avenir_roman"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:textColor="@color/colorBlack"
+                        android:text="Baho"
+                        android:textSize="@dimen/sp_13" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="7"
+                    android:fontFamily="@font/avenir_roman"
+                    android:background="@drawable/bg_rv_list"
+                    tools:listitem="@layout/table_list_item_rating"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

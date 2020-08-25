@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_78"
+        android:elevation="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_78"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_pupil_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="@dimen/dp_21"
+                android:layout_marginTop="@dimen/dp_22"
+                android:drawablePadding="@dimen/dp_10"
+                android:padding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_20"
+                android:src="@drawable/ic_back_blue"
+                android:textColor="#005FFF" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_35"
+        android:src="@drawable/ic_main_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/thanks"
+        android:textColor="#000000"
+        android:fontFamily="@font/avenir_roman"
+        android:textSize="@dimen/sp_22"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tel_number_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_8"
+        android:fontFamily="@font/avenir_roman"
+        android:text="+998 90 123-45-67"
+        android:textColor="#005FFF"
+        android:textSize="@dimen/sp_13" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir_roman"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="@string/tel_number"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <EditText
+            android:id="@+id/et_pin0"
+            tools:text="0"
+            android:fontFamily="@font/avenir_roman"
+            style="@style/SmsVerEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_pin1"
+            tools:text="1"
+            android:fontFamily="@font/avenir_roman"
+            style="@style/SmsVerEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_pin2"
+            tools:text="2"
+            android:fontFamily="@font/avenir_roman"
+            style="@style/SmsVerEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_pin3"
+            tools:text="3"
+            android:fontFamily="@font/avenir_roman"
+            style="@style/SmsVerEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_pin4"
+            tools:text="4"
+            android:fontFamily="@font/avenir_roman"
+            style="@style/SmsVerEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_pin5"
+            tools:text="5"
+            android:fontFamily="@font/avenir_roman"
+            style="@style/SmsVerEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_send_again"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center"
+            android:fontFamily="@font/avenir_roman"
+            android:layout_gravity="center"
+            android:text="@string/re_send_code" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_timer"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/avenir_roman"
+            android:textSize="@dimen/sp_18"
+            tools:text="02:00" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/background_blue"
+        android:padding="@dimen/dp_10"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+</LinearLayout>

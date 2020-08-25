@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/liner_les_item"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorBorder"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_les_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:padding="@dimen/dp_14"
+        android:fontFamily="@font/avenir_roman"
+        android:layout_weight="0.4"
+        android:gravity="left|center"
+        android:textSize="@dimen/sp_13" />
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/colorBorder"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_les_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.8"
+        android:padding="@dimen/dp_14"
+        android:gravity="left|center"
+        android:fontFamily="@font/avenir_roman"
+        android:text="Informatika"
+        android:textSize="@dimen/sp_13" />
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/colorBorder"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tv_les_check"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/dp_14"
+        android:gravity="left|center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@drawable/ic_selected"
+        android:text=""
+     />
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/colorBorder"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_les_mark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+       android:text="5"
+        android:padding="@dimen/dp_14"
+        android:gravity="left|center"
+        android:fontFamily="@font/avenir_roman"
+        android:textColor="@color/colorGreen"
+        android:textAlignment="center"
+        android:textSize="@dimen/sp_13" />
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/colorBorder"/>
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bg_item_rating"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorBorder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/dp_1"
+            android:background="@color/colorBorder"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_number_rating"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:layout_weight="0.3"
+            android:textSize="@dimen/sp_13" />
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/colorBorder"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_subject_rating"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_8"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/avenir_roman"
+            android:text="Informatika"
+            android:textSize="@dimen/sp_13" />
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/colorBorder"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_rating"
+            android:padding="@dimen/dp_8"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="A212"
+            android:fontFamily="@font/avenir_roman"
+            android:textSize="@dimen/sp_13" />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/dp_1"
+            android:background="@color/colorBorder"/>
+
+    </LinearLayout>
+
+</LinearLayout>

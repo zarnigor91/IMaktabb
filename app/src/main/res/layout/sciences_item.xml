@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_15"
+    >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subject_item_tomorrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white"
+        android:drawableEnd="@drawable/ic_strelka"
+        android:fontFamily="@font/avenir_roman"
+        android:text="Informatika"
+        android:padding="@dimen/dp_10"
+        />
+
+
+
+</LinearLayout>
